@@ -1,0 +1,191 @@
+<!--Main Navigation-->
+<header>
+  <!-- Navbar -->
+  <nav
+    class="navbar navbar-expand-lg navbar-dark"
+    style="z-index: 2000; background-color: rgba(0, 0, 0, 0.8)"
+  >
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand nav-link" href="index.php">
+        <strong>Sport Shop</strong>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="index.php"
+              >Trang chủ</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.php">Sản phẩm</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Về chúng tôi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Liên hệ</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav list-inline d-flex">
+          <!-- Icons -->
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="btn btn-outline-light position-relative ms-3"
+              href="cart.php"
+            >
+              <i class="bi bi-cart"></i> Giỏ hàng
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                id="cart-count"
+              >
+                0
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Carousel wrapper -->
+  <div
+    id="introCarousel"
+    class="carousel slide carousel-fade shadow-2-strong"
+    data-bs-ride="carousel"
+  >
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button
+        data-bs-target="#introCarousel"
+        data-bs-slide-to="0"
+        class="active"
+      ></button>
+      <button data-bs-target="#introCarousel" data-bs-slide-to="1"></button>
+      <button data-bs-target="#introCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+          <div
+            class="d-flex justify-content-center align-items-center h-100"
+          >
+            <div class="text-white text-center">
+              <h1 class="mb-3">Sport Shop - Chuyên dụng thể thao</h1>
+              <h5 class="mb-4">
+                Sản phẩm chất lượng cao từ các thương hiệu hàng đầu
+              </h5>
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="products.php"
+                role="button"
+                >Xem sản phẩm</a
+              >
+              <a class="btn btn-outline-light btn-lg m-2" role="button"
+                >Khuyến mãi</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div
+            class="d-flex justify-content-center align-items-center h-100"
+          >
+            <div class="text-white text-center">
+              <h2>Bộ sưu tập mới nhất</h2>
+              <p class="mt-3">
+                Khám phá các sản phẩm mới nhất của chúng tôi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div
+          class="mask"
+          style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.7),
+                  rgba(91, 14, 214, 0.7) 100%
+                );
+              "
+        >
+          <div
+            class="d-flex justify-content-center align-items-center h-100"
+          >
+            <div class="text-white text-center">
+              <h2>Ưu đãi đặc biệt</h2>
+              <p class="mt-3">
+                Giảm giá lên đến 50% cho các sản phẩm chọn lọc
+              </p>
+              <a class="btn btn-outline-light btn-lg m-2" role="button"
+                >Xem ngay</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <a
+      class="carousel-control-prev"
+      href="#introCarousel"
+      role="button"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#introCarousel"
+      role="button"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Carousel wrapper -->
+</header>
+<!--Main Navigation-->
