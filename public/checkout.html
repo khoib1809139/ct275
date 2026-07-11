@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Shop - Giỏ Hàng</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!--Main Navigation-->
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="z-index: 2000; background-color: rgba(0, 0, 0, 0.8)"
+      >
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand nav-link" href="index.html">
+            <strong>Sport Shop</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="TrangChu.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="SanPham.html">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="TinTuc.html">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ThuVien.html">Thư viện</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Về chúng tôi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav list-inline d-flex">
+              <!-- Icons -->
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-outline-light position-relative ms-3"
+                  href="checkout.html"
+                >
+                  <i class="bi bi-cart"></i> Giỏ hàng
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    id="cart-count"
+                  >
+                    3
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <h1 class="text-center mb-4">Giỏ Hàng</h1>
+
+      <div class="row">
+        <!-- Cart Items -->
+        <div class="col-md-8">
+          <div class="card mb-4">
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Tổng</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div>
+                        <strong>Giày thể thao Nike Air Max</strong>
+                        <p class="text-muted small mb-0">Size: 42</p>
+                      </div>
+                    </td>
+                    <td>1.500.000₫</td>
+                    <td>
+                      <div class="input-group" style="width: 120px">
+                        <button
+                          class="btn btn-outline-secondary btn-sm"
+                          type="button"
+                        >
+                          -
+                        </button>
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          value="1"
+                        />
+                        <button
+                          class="btn btn-outline-secondary btn-sm"
+                          type="button"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </td>
+                    <td>1.500.000₫</td>
+                    <td>
+                      <button class="btn btn-danger btn-sm">
+                        <i class="bi bi-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <strong>Quần áo Adidas Training</strong>
+                        <p class="text-muted small mb-0">Size: L</p>
+                      </div>
+                    </td>
+                    <td>800.000₫</td>
+                    <td>
+                      <div class="input-group" style="width: 120px">
+                        <button
+                          class="btn btn-outline-secondary btn-sm"
+                          type="button"
+                        >
+                          -
+                        </button>
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          value="2"
+                        />
+                        <button
+                          class="btn btn-outline-secondary btn-sm"
+                          type="button"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </td>
+                    <td>1.600.000₫</td>
+                    <td>
+                      <button class="btn btn-danger btn-sm">
+                        <i class="bi bi-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <strong>Bóng đá Puma Official</strong>
+                        <p class="text-muted small mb-0">Size: 5</p>
+                      </div>
+                    </td>
+                    <td>350.000₫</td>
+                    <td>
+                      <div class="input-group" style="width: 120px">
+                        <button
+                          class="btn btn-outline-secondary btn-sm"
+                          type="button"
+                        >
+                          -
+                        </button>
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          value="1"
+                        />
+                        <button
+                          class="btn btn-outline-secondary btn-sm"
+                          type="button"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </td>
+                    <td>350.000₫</td>
+                    <td>
+                      <button class="btn btn-danger btn-sm">
+                        <i class="bi bi-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title mb-4">Tóm tắt đơn hàng</h5>
+              <div class="d-flex justify-content-between mb-3">
+                <span>Tạm tính:</span>
+                <span>3.450.000₫</span>
+              </div>
+              <div class="d-flex justify-content-between mb-3">
+                <span>Phí vận chuyển:</span>
+                <span>Miễn phí</span>
+              </div>
+              <div class="d-flex justify-content-between mb-3">
+                <span>Giảm giá:</span>
+                <span class="text-danger">-100.000₫</span>
+              </div>
+              <hr />
+              <div class="d-flex justify-content-between mb-4">
+                <strong>Tổng cộng:</strong>
+                <strong class="text-primary">3.350.000₫</strong>
+              </div>
+
+              <!-- Coupon Code -->
+              <div class="mb-4">
+                <label class="form-label">Mã giảm giá</label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nhập mã giảm giá"
+                  />
+                  <button class="btn btn-outline-secondary" type="button">
+                    Áp dụng
+                  </button>
+                </div>
+              </div>
+
+              <button class="btn btn-primary w-100 mb-3">
+                Tiến hành thanh toán
+              </button>
+              <button class="btn btn-outline-secondary w-100">
+                Tiếp tục mua sắm
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Sport Shop</h5>
+            <p>Chuyên cung cấp dụng cụ thể thao chất lượng cao</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Liên hệ</h5>
+            <p>Email: info@sportshop.com</p>
+            <p>Điện thoại: 0123 456 789</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Theo dõi chúng tôi</h5>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <p class="text-center mb-0">
+          &copy; 2024 Sport Shop. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

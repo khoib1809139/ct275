@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Shop - Trang Chủ</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!--Main Navigation-->
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="z-index: 2000; background-color: rgba(0, 0, 0, 0.8)"
+      >
+        <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand nav-link" href="index.html">
+            <strong>Sport Shop</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="TrangChu.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="SanPham.html">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="TinTuc.html">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ThuVien.html">Thư viện</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Về chúng tôi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav list-inline d-flex">
+              <!-- Icons -->
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-outline-light position-relative ms-3"
+                  href="checkout.html"
+                >
+                  <i class="bi bi-cart"></i> Giỏ hàng
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    id="cart-count"
+                  >
+                    0
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Carousel wrapper -->
+      <div
+        id="introCarousel"
+        class="carousel slide carousel-fade shadow"
+        data-bs-ride="carousel"
+      >
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            data-bs-target="#introCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button data-bs-target="#introCarousel" data-bs-slide-to="1"></button>
+          <button data-bs-target="#introCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Inner -->
+        <div class="carousel-inner">
+          <!-- Single item -->
+          <div class="carousel-item active">
+            <img
+              src="../assets/img/logo/Photo_Test.jpg"
+              class="d-block w-100"
+              style="height: 400px; object-fit: cover"
+              alt="Sport Shop Banner 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4 fw-bold">
+                Sport Shop - Chuyên dụng thể thao
+              </h1>
+              <p class="lead">
+                Sản phẩm chất lượng cao từ các thương hiệu hàng đầu
+              </p>
+              <a
+                class="btn btn-outline-light btn-lg me-2"
+                href="SanPham.html"
+                role="button"
+                >Xem sản phẩm</a
+              >
+              <a class="btn btn-outline-light btn-lg" role="button"
+                >Khuyến mãi</a
+              >
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <img
+              src="../assets/img/logo/Photo_Test.jpg"
+              class="d-block w-100"
+              style="height: 400px; object-fit: cover"
+              alt="Sport Shop Banner 2"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-5 fw-bold">Bộ sưu tập mới nhất</h2>
+              <p class="lead">Khám phá các sản phẩm mới nhất của chúng tôi</p>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item">
+            <img
+              src="../assets/img/logo/Photo_Test.jpg"
+              class="d-block w-100"
+              style="height: 400px; object-fit: cover"
+              alt="Sport Shop Banner 3"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-5 fw-bold">Ưu đãi đặc biệt</h2>
+              <p class="lead">Giảm giá lên đến 50% cho các sản phẩm chọn lọc</p>
+              <a class="btn btn-outline-light btn-lg" role="button">Xem ngay</a>
+            </div>
+          </div>
+        </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <a
+          class="carousel-control-prev"
+          href="#introCarousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#introCarousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Carousel wrapper -->
+    </header>
+    <!--Main Navigation-->
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <!-- Welcome Section -->
+      <section class="text-center mb-5">
+        <h1 class="display-4 fw-bold">Chào mừng đến với Sport Shop</h1>
+        <p class="lead">Nơi cung cấp dụng cụ thể thao chất lượng cao nhất</p>
+      </section>
+
+      <!-- Featured Products Section -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Sản phẩm nổi bật</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="../assets/img/logo/Photo_Test.jpg"
+                class="card-img-top"
+                style="height: 200px; object-fit: cover"
+                alt="Giày thể thao Nike"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Giày thể thao Nike</h5>
+                <p class="card-text">Giày chạy bộ chất lượng cao</p>
+                <p class="card-text text-primary fw-bold">1.500.000₫</p>
+                <button class="btn btn-primary w-100">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="../assets/img/logo/Photo_Test.jpg"
+                class="card-img-top"
+                style="height: 200px; object-fit: cover"
+                alt="Quần áo Adidas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Quần áo Adidas</h5>
+                <p class="card-text">Bộ đồ tập thể thao</p>
+                <p class="card-text text-primary fw-bold">800.000₫</p>
+                <button class="btn btn-primary w-100">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="../assets/img/logo/Photo_Test.jpg"
+                class="card-img-top"
+                style="height: 200px; object-fit: cover"
+                alt="Bóng đá Puma"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bóng đá Puma</h5>
+                <p class="card-text">Bóng đá chính hãng</p>
+                <p class="card-text text-primary fw-bold">350.000₫</p>
+                <button class="btn btn-primary w-100">Thêm vào giỏ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Danh mục sản phẩm</h2>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="card text-center shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-shoe display-4 mb-3 text-primary"></i>
+                <h5 class="card-title">Giày thể thao</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card text-center shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-tshirt display-4 mb-3 text-primary"></i>
+                <h5 class="card-title">Quần áo</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card text-center shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-basketball display-4 mb-3 text-primary"></i>
+                <h5 class="card-title">Dụng cụ thể thao</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card text-center shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-watch display-4 mb-3 text-primary"></i>
+                <h5 class="card-title">Phụ kiện</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Tại sao chọn chúng tôi?</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card text-center h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-check-circle display-4 text-success mb-3"></i>
+                <h5 class="card-title">Chất lượng đảm bảo</h5>
+                <p class="card-text">Sản phẩm chính hãng 100%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card text-center h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-truck display-4 text-primary mb-3"></i>
+                <h5 class="card-title">Giao hàng nhanh</h5>
+                <p class="card-text">Miễn phí vận chuyển</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card text-center h-100 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-headset display-4 text-warning mb-3"></i>
+                <h5 class="card-title">Hỗ trợ 24/7</h5>
+                <p class="card-text">Luôn sẵn sàng giúp đỡ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Sport Shop</h5>
+            <p>Chuyên cung cấp dụng cụ thể thao chất lượng cao</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Liên hệ</h5>
+            <p>Email: info@sportshop.com</p>
+            <p>Điện thoại: 0123 456 789</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Theo dõi chúng tôi</h5>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <p class="text-center mb-0">
+          &copy; 2024 Sport Shop. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
